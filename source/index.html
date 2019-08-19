@@ -25,7 +25,18 @@
 
 <header>
     <nav class="nav">
-        <a class="nav__logo " href="index.html"><span class="visually-hidden">Logo Pink</span></a>
+        <a class="nav__logo " href="index.html">
+            <span class="visually-hidden">Logo Pink</span>
+            <svg class="nav__logo-icon nav__logo-icon--mobile">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
+            </svg>
+            <svg class="nav__logo-icon nav__logo-icon--tablet">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
+            </svg>
+            <svg class="nav__logo-icon nav__logo-icon--desktop">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
+          </svg>
+        </a>
 
         <ul class="nav__list">
             <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
@@ -38,20 +49,33 @@
     <div class="card-app">
         <div class="card-app__header">Взгляните на жизнь иначе!</div>
 
-        <!-- <picture>
-            <source media="(min-width: 960px)" srcset="img/hand-iphone-desktop@1x.png 1x, img/hand-iphone-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/hand-iphone-tablet@1x.png 1x, img/hand-iphone-tablet@2x.png 2x">
-            <img class="card-app__img" src="img/hand-iphone-mobile@1x.png" srcset="img/hand-iphone-mobile@2x.png 2x" alt="Фотография">
-        </picture> -->
-
-        <img class="card-app__img" src="img/hand-iphone-mobile@1x.png" alt="handIphone">
+        <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="card-app__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Фотография">
+        </picture>
 
         <div class="card-app__body">
             <button href="#" class="card-app__btn btn">Скачать приложение</button>
             <ul class="card-app__list">
-                <li class="card-app__item"><span class="visually-hidden">Apple</span></li>
-                <li class="card-app__item"><span class="visually-hidden">Android</span></li>
-                <li class="card-app__item"><span class="visually-hidden">Microsoft</span></li>
+                <li class="card-app__item">
+                    <span class="visually-hidden">Apple</span>
+                    <svg class="card-app__icon" aria-label="Apple">
+                        <use xlink:href="img/svg/sprite.svg#icon-logo-apple"></use>
+                    </svg>
+                </li>
+                <li class="card-app__item">
+                    <span class="visually-hidden">Android</span>
+                    <svg class="card-app__icon" aria-label="Android">
+                        <use xlink:href="img/svg/sprite.svg#icon-logo-android"></use>
+                    </svg>
+                </li>
+                <li class="card-app__item">
+                    <span class="visually-hidden">Microsoft</span>
+                    <svg class="card-app__icon" aria-label="Microsoft">
+                        <use xlink:href="img/svg/sprite.svg#icon-logo-microsoft"></use>
+                    </svg>
+                </li>
             </ul>
             <p class="card-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -63,23 +87,39 @@
 
         <h1 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h1>
 
+        <div class="features__img-absolute">
+            <picture>
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img class="features__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фотография">
+            </picture>
+        </div>
+
         <div class="features__cards">
             <div class="fearures__card">
-                <img src="..." class="fearures__card-img-top" alt="...">
+                <picture>
+                    <img class="features__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Фотография">
+                </picture>
+
                 <div class="fearures__card-body">
                     <h5 class="fearures__card-title">Поднимает настроение</h5>
                     <p class="fearures__card-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
             </div>
             <div class="fearures__card">
-                <img src="..." class="fearures__card-img-top" alt="...">
+                <picture>
+                    <img class="features__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Фотография">
+                </picture>
+
                 <div class="fearures__card-body">
                     <h5 class="fearures__card-title">Меняет мир вокруг</h5>
                     <p class="fearures__card-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>
             </div>
             <div class="fearures__card">
-                <img src="..." class="fearures__card-img-top" alt="...">
+                <picture>
+                    <img class="features__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Фотография">
+                </picture>
+
                 <div class="fearures__card-body">
                     <h5 class="fearures__card-title">Заводит новых друзей</h5>
                     <p class="fearures__card-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -189,7 +229,13 @@
                 <a class="map__contact">mail@htmlacademy.ru</a>
             </li>
         </ul>
-        <div class="map_img"></div>
+        <div class="map_img">
+             <picture>
+                 <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+                 <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+                 <img class="card-app__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фотография">
+             </picture>
+        </div>
     </section>
 
 </main>
@@ -202,9 +248,10 @@
 
     <div class="footer-page__logo logo">
         <a class="logo__link">
-            <svg class="logo__icon" aria-label="Логотип подвала">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-footer"></use>
-            </svg>
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/svg/logo-footer-desktop.svg">
+                <img class="logo__icon" src="img/svg/logo-footer-tablet.svg" alt="Фотография">
+            </picture>
         </a>
     </div>
 
@@ -230,7 +277,7 @@
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Youtube</span>
                     <svg class="social__icon" aria-label="Youtube">
-                        <use xlink:href="img/svg/sprite.svg#icon-instagram"></use>
+                        <use xlink:href="img/svg/sprite.svg#icon-youtube"></use>
                     </svg>
                 </a>
             </li>
@@ -242,7 +289,7 @@
         <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTMLAcademy</span>
             <svg class="copyright__logo" aria-label="HTMLAcademy">
-                <use xlink:href="img/svg/sprite.svg#icon-footer-logo"></use>
+                <use xlink:href="img/svg/sprite.svg#icon-html-academy"></use>
             </svg>
         </a>
     </div>

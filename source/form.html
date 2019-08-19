@@ -24,7 +24,18 @@
 
 <header>
     <nav class="nav">
-        <a class="nav__logo " href="index.html"><span class="visually-hidden">Logo Pink</span></a>
+        <a class="nav__logo " href="index.html">
+            <span class="visually-hidden">Logo Pink</span>
+            <svg class="nav__logo-icon nav__logo-icon--mobile">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
+            </svg>
+            <svg class="nav__logo-icon nav__logo-icon--tablet">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
+            </svg>
+            <svg class="nav__logo-icon nav__logo-icon--desktop">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
+            </svg>
+        </a>
 
         <ul class="nav__list">
             <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
@@ -46,18 +57,15 @@
             <div class="form__list form__list--introself">
                 <div class="form__item">
                     <label for="formGroupExampleInput">Фамилия:</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput"
-                        placeholder="Укажите фамилию *">
+                    <input class="form__control" type="text" id="formGroupExampleInput" placeholder="Укажите фамилию *">
                 </div>
                 <div class="form__item">
                     <label for="formGroupExampleInput2">Имя:</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput2"
-                        placeholder="Введите ваше имя *">
+                    <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Введите ваше имя *">
                 </div>
                 <div class="form__item">
                     <label for="formGroupExampleInput2">Отчество:</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput2"
-                        placeholder="Ну и отчество тоже">
+                    <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Ну и отчество тоже">
                 </div>
             </div>
 
@@ -71,7 +79,7 @@
                     <label class="form__check-label" for="inlineCheckbox1">Сделал селфи с акулой</label>
                 </div>
                 <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
                     <label class="form__check-label" for="inlineCheckbox3">Обгорел на пляже</label>
                 </div>
                 <div class="form__check">
@@ -79,15 +87,15 @@
                     <label class="form__check-label" for="inlineCheckbox2">Видел Чака Норриса</label>
                 </div>
                 <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
                     <label class="form__check-label" for="inlineCheckbox3">Накупил сувениров</label>
                 </div>
                 <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
                     <label class="form__check-label" for="inlineCheckbox3">Удержал башню</label>
                 </div>
                 <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
                     <label class="form__check-label" for="inlineCheckbox3">Разгромил отель</label>
                 </div>
             </div>
@@ -99,13 +107,11 @@
 
                 <div class="form__item form__item--phonenumber">
                     <label for="formGroupExampleInput">Номер телефона</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput"
-                        placeholder="Номер, пожалуйста">
+                    <input class="form__control" type="text" id="formGroupExampleInput" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="form__item form__item--email">
                     <label for="formGroupExampleInput2">Адрес почты</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput2"
-                        placeholder="Введите почту *">
+                    <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Введите почту *">
                 </div>
             </div>
 
@@ -116,7 +122,7 @@
                 <h3 class="form__title">С каким приложением путешествовали?</h3>
 
                 <div class="form__check">
-                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
                     <label class="form__check-label" for="exampleRadios1">Pink для iOS</label>
                 </div>
                 <div class="form__check">
@@ -124,7 +130,7 @@
                     <label class="form__check-label" for="exampleRadios2">Pink на Android</label>
                 </div>
                 <div class="form__check disabled">
-                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
                     <label class="form__check-label" for="exampleRadios3">Windows Phone</label>
                 </div>
             </div>
@@ -145,6 +151,57 @@
     </section>
 </main>
 
+
+<footer class="footer-page">
+
+    <div class="footer-page__logo logo">
+        <a class="logo__link">
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/svg/logo-footer-desktop.svg">
+                <img class="logo__icon" width="147" height="40" src="img/svg/logo-footer-tablet.svg" alt="Фотография">
+            </picture>
+        </a>
+    </div>
+
+    <div class="footer-page__social social">
+        <ul class="social__list">
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <span class="visually-hidden">Twitter</span>
+                    <svg class="social__icon" aria-label="Twitter">
+                        <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <span class="visually-hidden">Facebook</span>
+                    <svg class="social__icon" aria-label="Facebook">
+                        <use xlink:href="img/svg/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <span class="visually-hidden">Youtube</span>
+                    <svg class="social__icon" aria-label="Youtube">
+                        <use xlink:href="img/svg/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class=" footer-page__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTMLAcademy</span>
+            <svg class="copyright__logo" aria-label="HTMLAcademy">
+                <use xlink:href="img/svg/sprite.svg#icon-html-academy"></use>
+            </svg>
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>

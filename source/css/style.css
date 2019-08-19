@@ -1,6 +1,8 @@
 @import url(utility/fotns.css);
-*::after, *::before {
-  box-sizing: inherit; }
+* {
+  outline: 1px dashed red; }
+  *::after, *::before {
+    box-sizing: inherit; }
 
 html {
   box-sizing: border-box;
