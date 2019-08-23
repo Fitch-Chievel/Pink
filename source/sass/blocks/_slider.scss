@@ -1,0 +1,20 @@
+.slider {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.slider__item {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.slider__slider-control {
+    &--1 {}
+
+    &--2 {}
+
+    &--3 {}
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}

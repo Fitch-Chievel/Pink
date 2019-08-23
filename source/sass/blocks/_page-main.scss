@@ -1,0 +1,36 @@
+.page-main {
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        width: 660px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 960px;
+    }
+}
+
+@media (min-width: $tablet-width) {}
+@media (min-width: $desktop-width) {}
+
+.page-main__features {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.page-main__comment {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.page-main__cost {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.page-main__map {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+

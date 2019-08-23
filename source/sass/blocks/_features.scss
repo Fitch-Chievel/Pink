@@ -1,0 +1,68 @@
+.features {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.features__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+
+    @media (min-width: $tablet-width) {
+        font-size: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 50px;
+    }
+}
+.features__wrap-img-absolute {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.features__img-absolute {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.features__cards {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.features__card {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.features__img {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.features__card-body {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.features__card-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 30px;
+        line-height: 1;
+    }
+}
+.features__card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+
+    @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

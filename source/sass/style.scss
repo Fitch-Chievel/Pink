@@ -1,7 +1,30 @@
 @import "utility/variables";
 @import "utility/mixins";
-@import "utility/variables.scss";
-@import "utility/fotns.css";
+@import "utility/fonts.css";
 @import "utility/scaffolding";
+@import "blocks/btn";
+
+
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/page-footer";
+
+@import "blocks/card-app";
+@import "blocks/catalog";
+@import "blocks/comment";
+@import "blocks/copyright";
+@import "blocks/cost";
+@import "blocks/features";
+@import "blocks/form";
+@import "blocks/logo";
+@import "blocks/map";
+@import "blocks/nav";
+@import "blocks/sharestory";
+@import "blocks/slider";
+@import "blocks/social";
+@import "blocks/upload";
+
+
+
 
 

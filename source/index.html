@@ -9,22 +9,21 @@
     городок, туризм, жилье, сувениры, еда, фирменный бургер, Мост Дьявола, Гранд Каньон,
     небольшая площадь, красивая дорога, мало туристов, достопримечательности, гостиница,
     мотель, #VISITSEDONA">
-    <meta name="description" content="Седона &ndash; небольшой городок в Аризоне,
+    <meta name="description" content="Pink &ndash; небольшой городок в Аризоне,
     заслуживающий большего!">
     <meta name="author" content="https://github.com/Fitch-Chievel">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink | Главная</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/logotype-16.png">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/utility/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="nav">
+<header class="page-header">
+    <nav class="page-header__nav nav">
         <a class="nav__logo " href="index.html">
             <span class="visually-hidden">Logo Pink</span>
             <svg class="nav__logo-icon nav__logo-icon--mobile">
@@ -46,7 +45,7 @@
         </ul>
     </nav>
 
-    <div class="card-app">
+    <section class="page-header__card-app card-app">
         <div class="card-app__header">Взгляните на жизнь иначе!</div>
 
         <picture>
@@ -79,18 +78,18 @@
             </ul>
             <p class="card-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-    </div>
+    </section>
 </header>
 
-<main>
-    <section class="features">
+<main class="page-main">
+    <section class="page-main__features features">
 
         <h1 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h1>
 
-        <div class="features__img-absolute">
+        <div class="features__wrap-img-absolute">
             <picture>
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="features__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фотография">
+                <img class="features__img-absolute" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фотография">
             </picture>
         </div>
 
@@ -100,67 +99,75 @@
                     <img class="features__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Фотография">
                 </picture>
 
-                <div class="fearures__card-body">
-                    <h5 class="fearures__card-title">Поднимает настроение</h5>
-                    <p class="fearures__card-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <div class="features__card-body">
+                    <h5 class="features__card-title">Поднимает настроение</h5>
+                    <p class="features__card-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
             </div>
-            <div class="fearures__card">
+
+            <div class="features__card">
                 <picture>
                     <img class="features__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Фотография">
                 </picture>
 
-                <div class="fearures__card-body">
-                    <h5 class="fearures__card-title">Меняет мир вокруг</h5>
-                    <p class="fearures__card-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <div class="features__card-body">
+                    <h5 class="features__card-title">Меняет мир вокруг</h5>
+                    <p class="features__card-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>
             </div>
-            <div class="fearures__card">
+
+            <div class="features__card">
                 <picture>
                     <img class="features__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Фотография">
                 </picture>
 
-                <div class="fearures__card-body">
-                    <h5 class="fearures__card-title">Заводит новых друзей</h5>
-                    <p class="fearures__card-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <div class="features__card-body">
+                    <h5 class="features__card-title">Заводит новых друзей</h5>
+                    <p class="features__card-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="comment">
+    <section class="page-main__comment comment">
 
         <h1 class="visually-hidden">Отзывы о приложении</h1>
 
-        <div class="comment__effect">
-            <svg class="comment__icon">
-                <use xlink:href="img/symbols.svg#logo-header-mobile"></use>
+        <div class="comment__result">
+            <svg class="comment__result-icon">
+                <use xlink:href="img/sprite.svg#icon-clock"></use>
             </svg>
-            <h5 class="comment__title">Заводит новых друзей</h5>
-            <p class="comment__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="comment__link" href="">Узнать больше об исследовании</a>
+            <h5 class="comment__result-title">Эффект на 24 часа!</h5>
+            <p class="comment__result-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="comment__result-link" href="">Узнать больше об исследовании</a>
         </div>
 
         <div class="comment__group slider">
             <div class="comment__item slider__item">
-                <p class="comment__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-                <div class="comment__autor">
-                    <h3 class="comment__autor-title">Николай Петров</h3>
-                    <p class="comment__autor-desc">25 лет, учитель трамвая</p>
+                <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                    привычные серые вещи! А еще я познакомился со своей будущей женой в
+                    комментариях к выложенной фотографии!»</p>
+                <div class="comment__author">
+                    <h3 class="comment__author-title">Николай Петров</h3>
+                    <p class="comment__author-info">25 лет, учитель трамвая</p>
                 </div>
             </div>
             <div class="comment__item slider__item">
-                <p class="comment__text">Украинские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-                <div class="comment__autor">
-                    <h3 class="comment__autor-title">Михаил Петров</h3>
-                    <p class="comment__autor-desc">27 лет, водитель трамвая</p>
+                <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                    привычные серые вещи! А еще я познакомился со своей будущей женой в
+                    комментариях к выложенной фотографии!»</p>
+                <div class="comment__author">
+                    <h3 class="comment__author-title">Михаил Петров</h3>
+                    <p class="comment__author-info">27 лет, водитель трамвая</p>
                 </div>
             </div>
             <div class="comment__item slider__item">
-                <p class="comment__text">Китайские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-                <div class="comment__autor">
-                    <h3 class="comment__autor-title">Константин Петров</h3>
-                    <p class="comment__autor-desc">22 лет, программист трамвая</p>
+                <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                    привычные серые вещи! А еще я познакомился со своей будущей женой в
+                    комментариях к выложенной фотографии!»</p>
+                <div class="comment__author">
+                    <h3 class="comment__author-title">Константин Петров</h3>
+                    <p class="comment__author-info">22 лет, программист трамвая</p>
                 </div>
             </div>
 
@@ -170,7 +177,7 @@
         </div>
     </section>
 
-    <section class="cost">
+    <section class="page-main__cost cost">
         <table class="cost__table">
             <tr class="cost__row">
                 <th class="cost__cell cost__cell--header">
@@ -213,7 +220,7 @@
         <a class="cost__control slider__control--3" href="#" role="button"></a> -->
     </section>
 
-    <section class="map">
+    <section class="page-main__map map">
         <h2 class="map__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="map__list">
             <li class="map__item">
@@ -229,24 +236,23 @@
                 <a class="map__contact">mail@htmlacademy.ru</a>
             </li>
         </ul>
-        <div class="map_img">
+        <div class="map_wrap-img">
              <picture>
                  <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
                  <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-                 <img class="card-app__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фотография">
+                 <img class="map__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фотография">
              </picture>
         </div>
     </section>
-
 </main>
 
 <main>
 
 </main>
 
-<footer class="footer-page">
+<footer class="page-footer">
 
-    <div class="footer-page__logo logo">
+    <div class="page-footer__logo logo">
         <a class="logo__link">
             <picture>
                 <source media="(min-width: 960px)" srcset="img/svg/logo-footer-desktop.svg">
@@ -255,7 +261,7 @@
         </a>
     </div>
 
-    <div class="footer-page__social social">
+    <div class="page-footer__social social">
         <ul class="social__list">
             <li class="social__item">
                 <a href="#" class="social__link">
@@ -284,9 +290,9 @@
         </ul>
     </div>
 
-    <div class=" footer-page__copyright copyright">
+    <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTMLAcademy</span>
             <svg class="copyright__logo" aria-label="HTMLAcademy">
                 <use xlink:href="img/svg/sprite.svg#icon-html-academy"></use>

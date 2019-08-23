@@ -1,0 +1,82 @@
+.comment {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__result {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__result-icon {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__result-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__result-text {
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__result-link {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__group {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__item {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $black;
+
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__auhtor {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__author-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $black;
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.comment__author-info {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+

@@ -22,8 +22,8 @@
 </head>
 <body>
 
-<header>
-    <nav class="nav">
+<header class="header-page">
+    <nav class="header-page__nav nav">
         <a class="nav__logo " href="index.html">
             <span class="visually-hidden">Logo Pink</span>
             <svg class="nav__logo-icon nav__logo-icon--mobile">
@@ -43,17 +43,16 @@
             <li class="nav__item"><a class="nav__link" href="#">Конкурс</a></li>
             <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
         </ul>
+
+        <h2 class="nav__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </nav>
-
-    <h2 class="nav__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-
 </header>
 
-<main>
-    <section class="sharestory">
+<main class="main-page">
+
+    <section class="main-page__sharestory sharestory">
 
         <form class="sharestory__form form">
-
             <div class="form__list form__list--introself">
                 <div class="form__item">
                     <label for="formGroupExampleInput">Фамилия:</label>
@@ -68,7 +67,6 @@
                     <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Ну и отчество тоже">
                 </div>
             </div>
-
 
 
             <div class="form__list form__list--progress">
@@ -116,8 +114,6 @@
             </div>
 
 
-
-
             <div class="form__list form__list--app">
                 <h3 class="form__title">С каким приложением путешествовали?</h3>
 
@@ -135,6 +131,7 @@
                 </div>
             </div>
 
+
             <div class="form__wrap-textarea">
                 <h3 class="form__title">Опишите свои эмоции</h3>
 
@@ -145,7 +142,6 @@
                 <p class="form__text-btn">*Поля обязательны для заполнения</p>
                 <button type="button" class="form__btn btn">Отправить форму</button>
             </div>
-
         </form>
 
     </section>

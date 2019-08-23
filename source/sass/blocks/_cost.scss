@@ -1,0 +1,35 @@
+.cost {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.cost__title {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.cost__row {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.cost__cell {
+    &--header {}
+    &--hit {}
+    &--key {}
+    &--no {}
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+.cost__name {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.cost__price {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+
