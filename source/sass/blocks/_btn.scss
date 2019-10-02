@@ -5,13 +5,105 @@
 
     font: inherit;
 
-    
-
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
 
     background-color: transparent;
     border: none;
+
+    transition: color 0.2s linear,
+                background 0.2s linear,
+                opacity 0.2s linear;
+
+    &--download {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        color: $white;
+        text-transform: none;
+
+        border: 3px solid $white;
+        border-radius: 30px;
+
+        &:hover,
+        &:focus {
+            color: $secondary;
+
+            background-color: $white;
+        }
+
+        &:active {
+            color: lighten($secondary, 30%);
+        }
+
+        @media (min-width: $desktop-width) {
+            font-size: 21px;
+        }
+    }
+
+    &--form {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $white;
+
+        background-color: $green;
+        border-radius: 2px;
+
+        &:hover,
+        &:focus {
+            background-color: darken($green, 5%);
+        }
+
+        &:active {
+            color: lighten($green, 30%);
+            background-color: darken($green, 5%);
+        }
+    }
+
+    &--upload {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        color: $secondary;
+
+        text-transform: none;
+
+        border: 3px solid $secondary;
+        border-radius: 30px;
+
+        &:hover,
+        &:focus {
+            color: $white;
+            background-color: $secondary;
+        }
+
+        &:active {
+            color: lighten($secondary, 30%);
+        }
+    }
+
+    &--disabled {
+        color: $primary;
+
+        border-color: $primary;
+
+        opacity: 0.1;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+
+            background-color: transparent;
+            opacity: 0.3;
+        }
+
+        &:active {
+            color: lighten($white, 50%);
+            background-color: $primary;
+        }
+    }
 }
 

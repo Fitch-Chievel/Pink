@@ -22,149 +22,156 @@
 </head>
 <body>
 
-<header class="header-page">
-    <nav class="header-page__nav nav">
-        <a class="nav__logo " href="index.html">
-            <span class="visually-hidden">Logo Pink</span>
-            <svg class="nav__logo-icon nav__logo-icon--mobile">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
-            </svg>
-            <svg class="nav__logo-icon nav__logo-icon--tablet">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
-            </svg>
-            <svg class="nav__logo-icon nav__logo-icon--desktop">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
-            </svg>
-        </a>
+<header class="page-header">
+    <nav class="page-header__nav nav">
+        <div class="nav__inner">
+            <a class="nav__logo " href="index.html">
+                <span class="visually-hidden">Logo Pink</span>
+                <svg class="nav__logo-icon nav__logo-icon--mobile">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
+                </svg>
+                <svg class="nav__logo-icon nav__logo-icon--tablet">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
+                </svg>
+                <svg class="nav__logo-icon nav__logo-icon--desktop">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
+                </svg>
+            </a>
 
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Конкурс</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
-        </ul>
-
-        <h2 class="nav__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="form.html">Конкурс</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <h2 class="nav__title nav__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
 </header>
 
-<main class="main-page">
+<main class="page-main page-main--form">
 
     <section class="main-page__sharestory sharestory">
+        <h2 class="sharestory__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!&nbsp;<div class="sharestory__title-text">Пожалуйста, заполните форму ниже:</div></h2>
 
         <form class="sharestory__form form">
-            <div class="form__list form__list--introself">
-                <div class="form__item">
-                    <label for="formGroupExampleInput">Фамилия:</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput" placeholder="Укажите фамилию *">
-                </div>
-                <div class="form__item">
-                    <label for="formGroupExampleInput2">Имя:</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Введите ваше имя *">
-                </div>
-                <div class="form__item">
-                    <label for="formGroupExampleInput2">Отчество:</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Ну и отчество тоже">
-                </div>
-            </div>
-
-
-            <div class="form__list form__list--progress">
-                <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
-
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form__check-label" for="inlineCheckbox1">Сделал селфи с акулой</label>
-                </div>
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
-                    <label class="form__check-label" for="inlineCheckbox3">Обгорел на пляже</label>
-                </div>
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form__check-label" for="inlineCheckbox2">Видел Чака Норриса</label>
-                </div>
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
-                    <label class="form__check-label" for="inlineCheckbox3">Накупил сувениров</label>
-                </div>
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
-                    <label class="form__check-label" for="inlineCheckbox3">Удержал башню</label>
-                </div>
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--chekbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled="">
-                    <label class="form__check-label" for="inlineCheckbox3">Разгромил отель</label>
+            <div class="form__inner form__inner--introself">
+                <div class="form__list form__list--introself">
+                    <div class="form__item form__item--introself">
+                        <label class="form__label" for="formGroupExampleInput">Фамилия:</label>
+                        <input class="form__control" type="text" id="formGroupExampleInput" placeholder="Укажите фамилию *">
+                    </div>
+                    <div class="form__item form__item--introself">
+                        <label class="form__label" for="formGroupExampleInput2">Имя:</label>
+                        <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Введите ваше имя *">
+                    </div>
+                    <div class="form__item form__item--introself">
+                        <label class="form__label" for="formGroupExampleInput3">Отчество:</label>
+                        <input class="form__control" type="text" id="formGroupExampleInput3" placeholder="Ну и отчество тоже">
+                    </div>
                 </div>
             </div>
 
+            <div class="form__inner form__inner--adv">
+                <div class="form__list form__list--adv">
+                    <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
 
-
-            <div class="form__list form__list--contact">
-                <h3 class="form__title">Контактная информация</h3>
-
-                <div class="form__item form__item--phonenumber">
-                    <label for="formGroupExampleInput">Номер телефона</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput" placeholder="Номер, пожалуйста">
-                </div>
-                <div class="form__item form__item--email">
-                    <label for="formGroupExampleInput2">Адрес почты</label>
-                    <input class="form__control" type="text" id="formGroupExampleInput2" placeholder="Введите почту *">
-                </div>
-            </div>
-
-
-            <div class="form__list form__list--app">
-                <h3 class="form__title">С каким приложением путешествовали?</h3>
-
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
-                    <label class="form__check-label" for="exampleRadios1">Pink для iOS</label>
-                </div>
-                <div class="form__check">
-                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form__check-label" for="exampleRadios2">Pink на Android</label>
-                </div>
-                <div class="form__check disabled">
-                    <input class="form__check-input form__check-input--radio" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
-                    <label class="form__check-label" for="exampleRadios3">Windows Phone</label>
+                    <div class="form__check form__check--adv">
+                        <input class="form__check-input form__check-input--chekbox visually-hidden" type="checkbox" id="shark" value="option1">
+                        <label class="form__check-label form__check-label--chekbox" for="shark">Сделал селфи с акулой</label>
+                    </div>
+                    <div class="form__check form__check--adv">
+                        <input class="form__check-input form__check-input--chekbox visually-hidden" type="checkbox" id="beach" value="option2">
+                        <label class="form__check-label form__check-label--chekbox" for="beach">Обгорел на пляже</label>
+                    </div>
+                    <div class="form__check form__check--adv">
+                        <input class="form__check-input form__check-input--chekbox visually-hidden" type="checkbox" id="chucknorris" value="option3">
+                        <label class="form__check-label form__check-label--chekbox" for="chucknorris">Видел Чака Норриса</label>
+                    </div>
+                    <div class="form__check form__check--adv">
+                        <input class="form__check-input form__check-input--chekbox visually-hidden" type="checkbox" id="souvenir" value="option4">
+                        <label class="form__check-label form__check-label--chekbox" for="souvenir">Накупил сувениров</label>
+                    </div>
+                    <div class="form__check form__check--adv">
+                        <input class="form__check-input form__check-input--chekbox visually-hidden" type="checkbox" id="tower" value="option5" disabled="">
+                        <label class="form__check-label form__check-label--chekbox" for="tower">Удержал башню</label>
+                    </div>
+                    <div class="form__check form__check--adv">
+                        <input class="form__check-input form__check-input--chekbox visually-hidden" type="checkbox" id="hotel" value="option6">
+                        <label class="form__check-label form__check-label--chekbox" for="hotel">Разгромил отель</label>
+                    </div>
                 </div>
             </div>
 
+            <div class="form__inner form__inner--contact">
+                <div class="form__list form__list--contact">
+                    <h3 class="form__title form__title--contact">Контактная информация</h3>
 
-            <div class="form__wrap-textarea">
-                <h3 class="form__title">Опишите свои эмоции</h3>
-
-                <textarea class="form__textarea" name="comment" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях" readonly=""></textarea>
+                    <div class="form__item form__item--phonenumber">
+                        <label class="form__label" for="phonenumber">Номер телефона</label>
+                        <input class="form__control form__control--phonenumber" type="text" id="phonenumber" placeholder="Номер, пожалуйста">
+                    </div>
+                    <div class="form__item form__item--email">
+                        <label class="form__label" for="email">Адрес почты</label>
+                        <input class="form__control form__control--email" type="text" id="email" placeholder="Введите почту *">
+                    </div>
+                </div>
             </div>
 
-            <div class="form__wrap-btn">
-                <p class="form__text-btn">*Поля обязательны для заполнения</p>
-                <button type="button" class="form__btn btn">Отправить форму</button>
+            <div class="form__inner form__inner--app">
+                <div class="form__list form__list--app">
+                    <h3 class="form__title">С каким приложением путешествовали?</h3>
+
+                    <div class="form__check form__check--radio">
+                        <input class="form__check-input form__check-input--radio visually-hidden" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                        <label class="form__check-label form__check-label--radio" for="exampleRadios1">Pink для iOS</label>
+                    </div>
+                    <div class="form__check form__check--radio">
+                        <input class="form__check-input form__check-input--radio visually-hidden" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form__check-label form__check-label--radio" for="exampleRadios2">Pink на Android</label>
+                    </div>
+                    <div class="form__check form__check--radio disabled">
+                        <input class="form__check-input form__check-input--radio visually-hidden" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form__check-label form__check-label--radio" for="exampleRadios3">Windows Phone</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__inner form__inner--textarea">
+                <h3 class="form__title form__title--textarea">Опишите свои эмоции</h3>
+
+                <textarea class="form__textarea" name="comment" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях" readonly=""></textarea>
+            </div>
+            
+            <div class="form__inner form__inner--btn">
+                <button class="form__btn btn btn--form" type="button">Отправить форму</button>
+                <p class="form__btn-text"><span>*</span>&nbsp;&ndash;&nbsp;обязательные поля</p>
             </div>
         </form>
-
     </section>
 </main>
 
 
-<footer class="footer-page">
+<footer class="page-footer">
 
-    <div class="footer-page__logo logo">
+    <div class="page-footer__logo logo">
         <a class="logo__link">
-            <picture>
-                <source media="(min-width: 960px)" srcset="img/svg/logo-footer-desktop.svg">
-                <img class="logo__icon" width="147" height="40" src="img/svg/logo-footer-tablet.svg" alt="Фотография">
-            </picture>
+            <svg class="logo__icon logo__icon--first">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-footer-tablet"></use>
+            </svg>
+            <svg class="logo__icon logo__icon--second">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-footer-desktop"></use>
+            </svg>
         </a>
     </div>
 
-    <div class="footer-page__social social">
+    <div class="page-footer__social social">
         <ul class="social__list">
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Twitter</span>
-                    <svg class="social__icon" aria-label="Twitter">
+                    <svg class="social__icon social__icon--twitter" aria-label="Twitter">
                         <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
                     </svg>
                 </a>
@@ -172,7 +179,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Facebook</span>
-                    <svg class="social__icon" aria-label="Facebook">
+                    <svg class="social__icon social__icon--facebook" aria-label="Facebook">
                         <use xlink:href="img/svg/sprite.svg#icon-facebook"></use>
                     </svg>
                 </a>
@@ -180,7 +187,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Youtube</span>
-                    <svg class="social__icon" aria-label="Youtube">
+                    <svg class="social__icon social__icon--youtube" aria-label="Youtube">
                         <use xlink:href="img/svg/sprite.svg#icon-youtube"></use>
                     </svg>
                 </a>
@@ -188,9 +195,9 @@
         </ul>
     </div>
 
-    <div class=" footer-page__copyright copyright">
+    <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTMLAcademy</span>
             <svg class="copyright__logo" aria-label="HTMLAcademy">
                 <use xlink:href="img/svg/sprite.svg#icon-html-academy"></use>

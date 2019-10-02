@@ -21,7 +21,7 @@
 
 
 // Main colors on the project
-$blue-gray-lighter:         #475360;
+$blue-gray-lighter:           #475360;
 $blue-gray-light:             #283645;
 $blue-gray:                   #1d2631;
 
@@ -60,10 +60,13 @@ $secondary:                     $pink;
 // Шрифты
 
 $serif:               "Lora", Georgia, serif;
-$sans-serif:          "Open Sans", Arial, sans-serif;
+$sans-serif:          "Open Sans";
 
 // Расстояние
 
 $tablet-width:         660px;
 $desktop-width:        960px;
+
 $mobile-width-only:    659px;
+$tablet-width-only:    959px;
+

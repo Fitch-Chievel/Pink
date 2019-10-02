@@ -1,62 +1,233 @@
 .features {
-    @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
-}
+    position: relative;
 
-.features__title {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
+    padding-top: 40px;
 
     @media (min-width: $tablet-width) {
-        font-size: 40px;
+        padding-top: 50px;
     }
 
     @media (min-width: $desktop-width) {
-        font-size: 50px;
+        padding-top: 66px;
     }
 }
-.features__wrap-img-absolute {
-    @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
+
+.features__wrapper {
+    position: relative;
+    padding: 82px 0 319px;
+
+    &::after {
+        @include pseudo();
+
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $gray-light url(../../img/svg/bg-triangle-white.svg) no-repeat center top;
+        background-size: 100% 34px;
+        z-index: -1;
+    }
+
+    &::before {
+        @include pseudo();
+
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+        width: 157px;
+        height: 277px;
+
+        background: url(../../img/iphone-screen-mobile@1x.png) // ИСПРАВИТЬ
+            0 0
+            no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+        padding: 75px 0 0;
+
+        &::after {
+            background-size: 100% 53px;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0;
+
+        &::after {
+            background-size: 100% 95px;
+        }
+    }
 }
-.features__img-absolute {
-    @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
+
+.features__inner {
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        position: relative;
+
+        width: 660px;
+
+        &--cards {
+            &::before {
+                @include pseudo();
+
+                left: 21px;
+                bottom: 0;
+
+                width: 268px;
+                height: 481px;
+
+                background: url(../../img/iphone-screen-3-tablet@1x.png) // ИСПРАВИТЬ
+                    0 0 no-repeat;
+            }
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 960px;
+
+        &--cards {
+            &::before {
+                display: none;
+            }
+        }
+    }
 }
+
+
+.features__title {
+    margin-bottom: 29px;
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 47px;
+
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 77px;
+
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+.features__subtitle {
+    display: block;
+    margin-top: 27px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 40px;
+        margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
 .features__cards {
-    @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+        width: 340px;
+        margin-left: auto;
+        padding-bottom: 43px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+    }
 }
+
+.features__card + .features__card {
+    margin-top: 32px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
+}
+
 .features__card {
-    @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
+
+    @media (min-width: $tablet-width) {
+    }
+    @media (min-width: $desktop-width) {
+        width: calc(100% / 3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-.features__img {
+
+.features__card-img {
+    display: none;
+
     @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
+    @media (min-width: $desktop-width) {
+        display: block;
+        width: 292px;
+        height: 302px;
+        margin-bottom: 55px;
+    }
 }
+
 .features__card-body {
-    @media (min-width: $tablet-width) {}
-    @media (min-width: $desktop-width) {}
+    text-align: center;
+    padding: 0 30px;
+
+    @media (min-width: $tablet-width) {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+        text-align: center;
+        padding: 0 37px;
+    }
 }
+
 .features__card-title {
+    margin-bottom: 11px;
+
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    color: $black;
 
     @media (min-width: $tablet-width) {
     }
 
     @media (min-width: $desktop-width) {
+        margin-bottom: 25px;
+
         font-size: 30px;
         line-height: 1;
     }
 }
+
 .features__card-text {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 24px;
 
     @media (min-width: $tablet-width) {
     }

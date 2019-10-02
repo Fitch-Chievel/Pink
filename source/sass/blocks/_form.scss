@@ -1,2 +1,588 @@
+.form {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 960px;
+        margin: 0 auto;
+    }
+}
 
 
+.form__inner {
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    &--adv,
+    &--app {
+        background-color: $gray-light;
+    }
+
+    &--btn,
+    &--textarea {
+        width: 320px;
+        padding: 0 20px;
+    }
+
+    &--textarea {
+        position: relative;
+
+        padding: 38px 20px 0;
+    }
+
+    &--btn {
+        padding: 0 20px;
+    }
+
+
+    @media (min-width: $tablet-width) {
+        width: 660px;
+        padding: 0 20px;
+
+        &--adv,
+        &--app {
+            background-color: transparent;
+        }
+
+        &--introself {
+            order: 1;
+
+            margin-bottom: 40px;
+            padding: 37px 20px 0;
+
+            border: none;
+        }
+
+        &--adv {
+            order: 4;
+
+            margin-bottom: 65px;
+
+        }
+
+        &--contact {
+            order: 3;
+
+            margin-bottom: 65px;
+        }
+
+        &--app {
+            order: 2;
+
+            margin-bottom: 65px;
+
+        }
+
+        &--textarea {
+            padding: 44px 58px;
+            margin-bottom: 67px;
+
+            order: 5;
+            width: 620px;
+
+            border: solid 2px $gray;
+        }
+
+        &--btn {
+            order: 6;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        box-sizing: border-box;
+        flex-wrap: wrap;
+
+        &--introself {
+            width: 50%;
+            padding: 0 0 0 10px;
+        }
+
+        &--adv {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        &--contact {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        &--app {
+            width: 50%;
+            padding: 0 10px 0 35px;
+        }
+
+        &--textarea {
+            width: 940px;
+            padding: 42px 58px 44px 58px;
+            margin-bottom: 63px;
+        }
+
+        &--btn {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+
+}
+
+.form__list {
+    width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &--introself {
+        padding: 34px 20px 42px;
+    }
+
+    &--adv {
+        padding: 39px 20px 42px;
+    }
+
+    &--contact {
+        padding: 32px 20px 43px;
+    }
+
+    &--app {
+        padding: 38px 20px 41px;
+    }
+
+    @media (min-width: $tablet-width) {
+        position: relative;
+
+        width: auto;
+
+        border: solid 2px $gray;
+
+        &--introself {
+            padding: 33px 0 26px;
+
+            border: none;
+        }
+
+        &--adv {
+            padding: 52px 58px 48px;
+        }
+
+        &--contact {
+            padding: 45px 58px 25px;
+        }
+
+        &--app {
+            padding: 52px 58px 55px;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 100%;
+        box-sizing: border-box;
+
+        &--introself {
+            padding: 5px 0 0 0;
+        }
+
+        &--contact {
+            display: flex;
+            flex-direction: row;
+            padding: 41px 59px 12px;
+        }
+
+        &--adv {
+            padding: 52px 0 12px 58px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &--app {
+            padding: 54px 58px 55px 74px;
+        }
+    }
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+
+    &--phonenumber {}
+    &--email {}
+
+    &--introself + &--introself {
+        margin-top: 17px;
+    }
+
+    &--phonenumber + &--email {
+        margin-top: 16px;
+    }
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+
+        &--introself {
+            align-items: center;
+        }
+
+        &--phonenumber,
+        &--email {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &--introself + &--introself {
+            margin-top: 52px;
+        }
+
+        &--phonenumber + &--email {
+            margin-top: 28px;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        &--introself + &--introself {
+            margin-top: 54px;
+        }
+
+
+        &--phonenumber,
+        &--email {
+            width: 50%;
+        }
+
+        &--phonenumber + &--email {
+            margin: 0;
+        }
+
+        &--phonenumber{
+            padding-right: 37px;
+        }
+
+        &--email {
+            padding-left: 37px;
+        }
+    }
+}
+
+.form__label,
+.form__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $secondary;
+}
+
+.form__label {
+    padding-left: 23px;
+    margin-bottom: 5px;
+
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        padding-left: 19px;
+        margin: 0 19px 0 0;
+    }
+    @media (min-width: $desktop-width) {
+        padding-left: 0;
+        margin: 0 20px 0 0;
+    }
+}
+
+.form__title {
+    margin-bottom: 37px;
+
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--contact {
+        display: none;
+    }
+
+    &--textarea {
+        margin-bottom: 16px;
+    }
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        padding: 0 25px;
+
+        line-height: 30px;
+        white-space: nowrap;
+        transform: translate(-50%,-50%);
+        background-color: $white;
+
+        &--contact {
+            display: block;
+        }
+    }
+    @media (min-width: $desktop-width) {}
+}
+
+.form__control {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 63px;
+    padding: 14px 20px 15px;
+
+    font: inherit;
+    font-size: 18px;
+    color: inherit;
+    outline: 0;
+
+    border: solid 2px $gray;
+    border-radius: 3px;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+        border-color: $primary;
+    }
+
+    &:focus  {
+        border-color: $secondary;
+    }
+
+    @media (min-width: $tablet-width) {
+        &--phonenumber,
+        &--email {
+            order: -1;
+
+            margin-bottom: 11px;
+
+            background-repeat: no-repeat;
+            background-position: calc(100% - 20px) 50%, right top;
+        }
+
+        &--email {
+            background-image: url(../../img/svg/icon-mail.svg), linear-gradient(to left, $gray 60px,transparent 60px);
+        }
+
+        &--phonenumber {
+
+
+            background-image: url(../../img/svg/icon-phone.svg), linear-gradient(to left, $gray 60px,transparent 60px);
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: 34px;
+    }
+}
+
+.form__check {
+    &--adv + &--adv {
+        margin-top: 42px;
+    }
+
+    &--radio + &--radio {
+        margin-top: 34px;
+    }
+
+    @media (min-width: $tablet-width) {}
+
+    @media (min-width: $desktop-width) {
+        &--adv + &--adv {
+            margin-top: 0;
+        }
+
+        &--adv {
+            width: calc(100% / 3);
+            margin: 0 0 42px 0;
+        }
+    }
+}
+
+.form__check-input {
+    &--chekbox:checked + .form__check-label::after {
+        @include pseudo();
+
+        top: 12px;
+        left: 9px;
+
+        width: 20px;
+        height: 8px;
+
+        border-left: solid 2px $secondary;
+        border-bottom: solid 2px $secondary;
+        transform: rotate(-45deg);
+
+        transition: all 0.2s linear;
+    }
+
+    &--radio:checked + .form__check-label::after {
+        @include pseudo();
+
+        top: 10px;
+        left: 10px;
+
+        width: 15px;
+        height: 15px;
+
+        background-color: $secondary;
+        border: 0;
+        border-radius: 50%;
+
+        transition: all 0.2s linear;
+    }
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.form__check-label {
+    position: relative;
+    display: block;
+
+    padding: 5px 0 5px 69px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &:hover:not(:disabled)::before {
+        border-color: $primary;
+    }
+
+    &:focus:not(:disabled)::before,
+    &:active:not(:disabled)::before {
+        border-color: $secondary;
+    }
+
+    &--chekbox {
+        &::before {
+            @include pseudo();
+
+            top: 0;
+            left: 0;
+
+            width: 35px;
+            height: 35px;
+
+            background-color: $white;
+            border: solid 2px $gray;
+            border-radius: 3px;
+
+            transition: all 0.2s linear;
+        }
+    }
+
+    &--radio {
+        &::before {
+            @include pseudo();
+
+            top: 0;
+            left: 0;
+
+            width: 35px;
+            height: 35px;
+
+            background-color: $white;
+            border: solid 2px $gray;
+            border-radius: 50%;
+
+            transition: all 0.2s linear;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        display: inline-block;
+        padding: 5px 0 5px 60px;
+
+        &--chekbox {
+        }
+
+        &--radio {
+        }
+    }
+    @media (min-width: $desktop-width) {}
+}
+
+.form__textarea {
+    width: 100%;
+    padding: 14px 0 0 19px;
+    margin-bottom: 52px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+
+    box-sizing: border-box;
+    border: 2px solid $gray;
+
+    resize: none;
+
+    transition: all 0.2s linear;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $primary;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 14px 0 18px 19px;
+    }
+}
+
+.form__wrap-btn {
+    order: 7;
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        width: 660px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (min-width: $desktop-width) {
+        width: 600px;
+    }
+}
+
+.form__btn {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 16px 0 17px;
+
+    @media (min-width: $tablet-width) {
+        width: 300px;
+        margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {}
+}
+
+.form__btn-text {
+    margin-left: 55px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    & > span {
+        color: $secondary;
+    }
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}

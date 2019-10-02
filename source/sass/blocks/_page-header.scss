@@ -1,13 +1,27 @@
 .page-header {
-    width: 320px;
-    margin: 0 auto;
+    background-image: url(../../img/bg-back-mobile.jpg);
+    background-position: -190px 256px;
+
+    &--photo {
+        background-position: -190px 256px;
+    }
 
     @media (min-width: $tablet-width) {
-        width: 660px;
+        background-image: url(../../img/bg-back-tablet.jpg);
+        background-position: -270px 254px;
+
+        &--photo {
+            background-position: -270px 254px;
+        }
     }
 
     @media (min-width: $desktop-width) {
-        width: 960px;
+        background-image: url(../../img/bg-back-desktop.jpg);
+        background-position: -680px 0;
+
+        &--photo {
+            background-position: -680px 0;
+        }
     }
 }
 
@@ -16,7 +30,7 @@
     @media (min-width: $desktop-width) {}
 }
 
-.page-header__card-app {
+.page-header__dowload {
     @media (min-width: $tablet-width) {}
     @media (min-width: $desktop-width) {}
 }

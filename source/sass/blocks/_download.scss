@@ -1,0 +1,194 @@
+.download {
+    position: relative;
+
+    margin: 0 auto;
+    padding-top: 109px;
+
+    @media (min-width: $tablet-width) {
+        width: 660px;
+        display: flex;
+        padding: 92px 0 109px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 960px;
+        padding: 108px 0 119px;
+    }
+}
+
+.download__inner {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+    }
+
+    @media (min-width: $desktop-width) {}
+}
+
+.download__slogan {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        padding: 0 56px;
+        margin-bottom: 31px;
+
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 48px;
+        color: $white;
+        text-align: center;
+
+        z-index: 10;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 52px;
+        padding: 0 56px 0 40px;
+
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+.download__img-wrap {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.download__img {
+    display: flex;
+    width: 258px;
+    height: 286px;
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        transform: none;
+
+        left: 0;
+        bottom: 0;
+
+        width: 700px;
+        height: 545px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1050px;
+        height: 645px;
+    }
+}
+
+.download__body {
+    padding: 28px 0 30px;
+
+    @media (max-width: $mobile-width-only) {
+        width: 100%;
+
+        background-color: $blue-gray;
+    }
+
+    @media (min-width: $tablet-width) {
+        z-index: 10;
+        padding: 0;
+    }
+    @media (min-width: $desktop-width) {}
+}
+
+.download__body-inner {
+    box-sizing: border-box;
+
+    @media (max-width: $mobile-width-only) {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+}
+
+.download__btn {
+    display: block;
+    margin: 0 auto 32px;
+
+    padding: 15px 35px 17px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 46px;
+        padding: 15px 46px 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 67px;
+        padding: 12px 38px 17px 46px;
+    }
+}
+
+.download__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 37px;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 35px;
+        padding: 0 66px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 57px;
+        padding: 0 57px;
+    }
+}
+
+.download__item {
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.download__icon {
+    display: flex;
+
+    &--apple {
+        width: 47px;
+        height: 56px;
+    }
+
+    &--android {
+        width: 43px;
+        height: 47px;
+    }
+
+    &--microsoft {
+        width: 44px;
+        height: 41px;
+    }
+
+    @media (min-width: $tablet-width) {}
+    @media (min-width: $desktop-width) {}
+}
+
+.download__text {
+    // padding: 0 43px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $white;
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop-width) {}
+}

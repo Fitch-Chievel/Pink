@@ -1,15 +1,15 @@
 @import "utility/variables";
 @import "utility/mixins";
-@import "utility/fonts.css";
+@import "utility/fonts";
 @import "utility/scaffolding";
 @import "blocks/btn";
-
 
 @import "blocks/page-header";
 @import "blocks/page-main";
 @import "blocks/page-footer";
 
-@import "blocks/card-app";
+@import "blocks/slider";
+@import "blocks/download";
 @import "blocks/catalog";
 @import "blocks/comment";
 @import "blocks/copyright";
@@ -20,7 +20,6 @@
 @import "blocks/map";
 @import "blocks/nav";
 @import "blocks/sharestory";
-@import "blocks/slider";
 @import "blocks/social";
 @import "blocks/upload";
 

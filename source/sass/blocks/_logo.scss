@@ -1,14 +1,58 @@
 .logo {
-    @media (min-width: $tablet-width) {}
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {}
 }
 
 .logo__link {
+    width: 147px;
+    height: 40px;
+
     @media (min-width: $tablet-width) {}
     @media (min-width: $desktop-width) {}
 }
 .logo__icon {
-    @media (min-width: $tablet-width) {}
+    width: 147px;
+    height: 40px;
+
+    transition: fill 0.2s linear,
+                opacity 0.2s linear;
+
+    &--first {
+        display: block;
+    }
+
+    &--second {
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+        fill: $secondary;
+    }
+
+    &:active {
+        fill: $secondary;
+
+        opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+        &--first {
+            display: none;
+        }
+
+        &--second {
+            display: block;
+        }
+    }
+    
     @media (min-width: $desktop-width) {}
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="Fitch-Chievel, HTML Academy, Pink, Седона, Аризона,
+    <meta name="keywords" content="Fitch-Chievel, HTML Academy, Pink, Пинк, Аризона,
     городок, туризм, жилье, сувениры, еда, фирменный бургер, Мост Дьявола, Гранд Каньон,
     небольшая площадь, красивая дорога, мало туристов, достопримечательности, гостиница,
     мотель, #VISITSEDONA">
@@ -24,106 +24,118 @@
 
 <header class="page-header">
     <nav class="page-header__nav nav">
-        <a class="nav__logo " href="index.html">
-            <span class="visually-hidden">Logo Pink</span>
-            <svg class="nav__logo-icon nav__logo-icon--mobile">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
-            </svg>
-            <svg class="nav__logo-icon nav__logo-icon--tablet">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
-            </svg>
-            <svg class="nav__logo-icon nav__logo-icon--desktop">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
-          </svg>
-        </a>
+        <div class="nav__inner">
+            <a class="nav__logo " href="index.html">
+                <span class="visually-hidden">Logo Pink</span>
+                <svg class="nav__logo-icon nav__logo-icon--mobile">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
+                </svg>
+                <svg class="nav__logo-icon nav__logo-icon--tablet">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
+                </svg>
+                <svg class="nav__logo-icon nav__logo-icon--desktop">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
+                </svg>
+            </a>
 
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Конкурс</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
-        </ul>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+                <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="page-header__card-app card-app">
-        <div class="card-app__header">Взгляните на жизнь иначе!</div>
+    <section class="page-header__download download">
+        <div class="download__inner">
+            <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
 
-        <picture>
-            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-            <img class="card-app__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Фотография">
-        </picture>
+            <div class="download__img-wrap">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                    <img class="download__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Фотография">
+                </picture>
+            </div>
 
-        <div class="card-app__body">
-            <button href="#" class="card-app__btn btn">Скачать приложение</button>
-            <ul class="card-app__list">
-                <li class="card-app__item">
-                    <span class="visually-hidden">Apple</span>
-                    <svg class="card-app__icon" aria-label="Apple">
-                        <use xlink:href="img/svg/sprite.svg#icon-logo-apple"></use>
-                    </svg>
-                </li>
-                <li class="card-app__item">
-                    <span class="visually-hidden">Android</span>
-                    <svg class="card-app__icon" aria-label="Android">
-                        <use xlink:href="img/svg/sprite.svg#icon-logo-android"></use>
-                    </svg>
-                </li>
-                <li class="card-app__item">
-                    <span class="visually-hidden">Microsoft</span>
-                    <svg class="card-app__icon" aria-label="Microsoft">
-                        <use xlink:href="img/svg/sprite.svg#icon-logo-microsoft"></use>
-                    </svg>
-                </li>
-            </ul>
-            <p class="card-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <div class="download__body">
+                <div class="download__body-inner">
+                    <button href="#" class="download__btn btn btn--download">Скачать приложение</button>
+                    <ul class="download__list">
+                        <li class="download__item">
+                            <span class="visually-hidden">Apple</span>
+                            <svg class="download__icon download__icon--apple" aria-label="Apple">
+                                <use xlink:href="img/svg/sprite.svg#icon-logo-apple"></use>
+                            </svg>
+                        </li>
+                        <li class="download__item">
+                            <span class="visually-hidden">Android</span>
+                            <svg class="download__icon download__icon--android" aria-label="Android">
+                                <use xlink:href="img/svg/sprite.svg#icon-logo-android"></use>
+                            </svg>
+                        </li>
+                        <li class="download__item">
+                            <span class="visually-hidden">Microsoft</span>
+                            <svg class="download__icon download__icon--microsoft" aria-label="Microsoft">
+                                <use xlink:href="img/svg/sprite.svg#icon-logo-microsoft"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+            </div>
         </div>
     </section>
 </header>
 
 <main class="page-main">
     <section class="page-main__features features">
-
-        <h1 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h1>
-
-        <div class="features__wrap-img-absolute">
-            <picture>
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="features__img-absolute" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фотография">
-            </picture>
+        <div class="features__inner">
+            <h1 class="features__title">
+                Устали от серости мегаполиса?
+                <span class="features__subtitle">Нам есть, что вам предложить!</span>
+            </h1>
         </div>
 
-        <div class="features__cards">
-            <div class="fearures__card">
-                <picture>
-                    <img class="features__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Фотография">
-                </picture>
+        <div class="features__wrapper">
+            <div class="features__inner features__inner--cards">
+                <div class="features__cards">
+                    <div class="features__card">
+                        <picture>
+                            <img class="features__card-img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Фотография">
+                        </picture>
 
-                <div class="features__card-body">
-                    <h5 class="features__card-title">Поднимает настроение</h5>
-                    <p class="features__card-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </div>
-            </div>
+                        <div class="features__card-body">
+                            <h5 class="features__card-title">Поднимает настроение</h5>
+                            <p class="features__card-text">Приложение позволит вам победить осеннюю хандру и депрессию
+                                буквально в несколько кликов!</p>
+                        </div>
+                    </div>
 
-            <div class="features__card">
-                <picture>
-                    <img class="features__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Фотография">
-                </picture>
+                    <div class="features__card">
+                        <picture>
+                            <img class="features__card-img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Фотография">
+                        </picture>
 
-                <div class="features__card-body">
-                    <h5 class="features__card-title">Меняет мир вокруг</h5>
-                    <p class="features__card-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </div>
-            </div>
+                        <div class="features__card-body">
+                            <h5 class="features__card-title">Меняет мир вокруг</h5>
+                            <p class="features__card-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                                чтобы усилить эффект</p>
+                        </div>
+                    </div>
 
-            <div class="features__card">
-                <picture>
-                    <img class="features__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Фотография">
-                </picture>
+                    <div class="features__card">
+                        <picture>
+                            <img class="features__card-img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Фотография">
+                        </picture>
 
-                <div class="features__card-body">
-                    <h5 class="features__card-title">Заводит новых друзей</h5>
-                    <p class="features__card-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                        <div class="features__card-body">
+                            <h5 class="features__card-title">Заводит новых друзей</h5>
+                            <p class="features__card-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                                заводите новых</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,131 +145,141 @@
 
         <h1 class="visually-hidden">Отзывы о приложении</h1>
 
-        <div class="comment__result">
-            <svg class="comment__result-icon">
-                <use xlink:href="img/sprite.svg#icon-clock"></use>
-            </svg>
-            <h5 class="comment__result-title">Эффект на 24 часа!</h5>
-            <p class="comment__result-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="comment__result-link" href="">Узнать больше об исследовании</a>
+        <div class="comment__inner comment__inner--result">
+            <div class="comment__result">
+                <svg class="comment__result-icon">
+                    <use xlink:href="img/svg/sprite.svg#icon-timer"></use>
+                </svg>
+                <div class="comment__result-body">
+                    <h5 class="comment__result-title">Эффект на 24 часа!</h5>
+                    <p class="comment__result-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                    <a class="comment__result-link" href="">Узнать больше об исследовании</a>
+                </div>
+            </div>
         </div>
 
-        <div class="comment__group slider">
-            <div class="comment__item slider__item">
-                <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                    привычные серые вещи! А еще я познакомился со своей будущей женой в
-                    комментариях к выложенной фотографии!»</p>
-                <div class="comment__author">
-                    <h3 class="comment__author-title">Николай Петров</h3>
-                    <p class="comment__author-info">25 лет, учитель трамвая</p>
+        <div class="comment__inner">
+            <div class="comment__list slider">
+                <div class="comment__item slider__item">
+                    <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                        привычные серые вещи! А еще я познакомился со своей будущей женой в
+                        комментариях к выложенной фотографии!»</p>
+                    <div class="comment__author">
+                        <h3 class="comment__author-title">Николай Петров</h3>
+                        <p class="comment__author-info">25 лет, учитель трамвая</p>
+                    </div>
                 </div>
-            </div>
-            <div class="comment__item slider__item">
-                <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                    привычные серые вещи! А еще я познакомился со своей будущей женой в
-                    комментариях к выложенной фотографии!»</p>
-                <div class="comment__author">
-                    <h3 class="comment__author-title">Михаил Петров</h3>
-                    <p class="comment__author-info">27 лет, водитель трамвая</p>
+                <div class="comment__item comment__item--none slider__item">
+                    <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                        привычные серые вещи! А еще я познакомился со своей будущей женой в
+                        комментариях к выложенной фотографии!»</p>
+                    <div class="comment__author">
+                        <h3 class="comment__author-title">Михаил Петров</h3>
+                        <p class="comment__author-info">27 лет, водитель трамвая</p>
+                    </div>
                 </div>
-            </div>
-            <div class="comment__item slider__item">
-                <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                    привычные серые вещи! А еще я познакомился со своей будущей женой в
-                    комментариях к выложенной фотографии!»</p>
-                <div class="comment__author">
-                    <h3 class="comment__author-title">Константин Петров</h3>
-                    <p class="comment__author-info">22 лет, программист трамвая</p>
+                <div class="comment__item comment__item--none slider__item">
+                    <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                        привычные серые вещи! А еще я познакомился со своей будущей женой в
+                        комментариях к выложенной фотографии!»</p>
+                    <div class="comment__author">
+                        <h3 class="comment__author-title">Константин Петров</h3>
+                        <p class="comment__author-info">22 лет, программист трамвая</p>
+                    </div>
                 </div>
             </div>
 
-            <a class="comment__slider-control comment__slider-control--1" href="#" role="button"></a>
-            <a class="comment__slider-control comment__slider-control--2" href="#" role="button"></a>
-            <a class="comment__slider-control comment__slider-control--3" href="#" role="button"></a>
+            <div class="comment__slider-controls slider__controls">
+                <span class="slider__control slider__control--active" href="#" role="button"></span>
+                <span class="slider__control slider__control--prev" href="#" role="button"></span>
+                <span class="slider__control slider__control--next" href="#" role="button"></span>
+            </div>
         </div>
     </section>
 
     <section class="page-main__cost cost">
-        <table class="cost__table">
-            <tr class="cost__row">
-                <th class="cost__cell cost__cell--header">
-                    <p class="cost__name">База</p>
-                    <p class="cost__price">1,99 USD</p>
-                </th>
-                <th class="cost__cell cost__cell--header cost__cell--hit">
-                    <p class="cost__name">Стандарт</p>
-                    <p class="cost__price">3,99 USD</p>
-                </th>
-                <th class="cost__cell cost__cell--header">
-                    <p class="cost__name">Анлим</p>
-                    <p class="cost__price">9,99 USD</p>
-                </th>
-            </tr>
-            <tr class="cost__row">
-                <td class="cost__cell cost__cell--key">Розовый фильтр</td>
-                <td class="cost__cell"><span class="visually-hidden">Есть</span></td>
-                <td class="cost__cell"><span class="visually-hidden">Есть</span></td>
-                <td class="cost__cell"><span class="visually-hidden">Есть</span></td>
-            </tr>
-            <tr class="cost__row">
-                <td class="cost__cell cost__cell--key">Смайлики</td>
-                <td class="cost__cell cost__cell--no"><span class="visually-hidden">Нет</span></td>
-                <td class="cost__cell"><span class="visually-hidden">Есть</span></td>
-                <td class="cost__cell"><span class="visually-hidden">Есть</span></td>
-            </tr>
-            <tr class="cost__row">
-                <td class="cost__cell cost__cell--key">Комментарии</td>
-                <td class="cost__cell cost__cell--no"><span class="visually-hidden">Нет</span></td>
-                <td class="cost__cell cost__cell--no"><span class="visually-hidden">Нет</span></td>
-                <td class="cost__cell"><span class="visually-hidden">Есть</span></td>
-            </tr>
-        </table>
+        <div class="cost__inner">
+            <table class="cost__table">
+                <tr class="cost__row cost__row--header">
+                    <td class="cost__cell cost__cell--empty"></td>
+                    <th class="cost__cell cost__cell--header">
+                        <p class="cost__name">База</p>
+                        <p class="cost__price">1,99 USD</p>
+                    </th>
+                    <th class="cost__cell cost__cell--header cost__cell--hit">
+                        <p class="cost__hit">ХИТ</p>
+                        <p class="cost__name">Стандарт</p>
+                        <p class="cost__price">3,99 USD</p>
+                    </th>
+                    <th class="cost__cell cost__cell--header">
+                        <p class="cost__name">Анлим</p>
+                        <p class="cost__price">9,99 USD</p>
+                    </th>
+                </tr>
+                <tr class="cost__row">
+                    <td class="cost__cell cost__cell--key cost__cell--hidden">Розовый фильтр</td>
+                    <td class="cost__cell cost__cell--yes"><span class="cost__hidden">Розовый фильтр</span><span class="visually-hidden">Есть</span></td>
+                    <td class="cost__cell cost__cell--yes"><span class="cost__hidden">Розовый фильтр</span><span class="visually-hidden">Есть</span></td>
+                    <td class="cost__cell cost__cell--yes"><span class="cost__hidden">Розовый фильтр</span><span class="visually-hidden">Есть</span></td>
+                </tr>
+                <tr class="cost__row">
+                    <td class="cost__cell cost__cell--key cost__cell--hidden">Смайлики</td>
+                    <td class="cost__cell cost__cell--no"><span class="cost__hidden">Смайлики</span><span class="visually-hidden">Нет</span></td>
+                    <td class="cost__cell cost__cell--yes"><span class="cost__hidden">Смайлики</span><span class="visually-hidden">Есть</span></td>
+                    <td class="cost__cell cost__cell--yes"><span class="cost__hidden">Смайлики</span><span class="visually-hidden">Есть</span></td>
+                </tr>
+                <tr class="cost__row">
+                    <td class="cost__cell cost__cell--key cost__cell--hidden">Комментарии</td>
+                    <td class="cost__cell cost__cell--no"><span class="cost__hidden">Комментарии</span><span class="visually-hidden">Нет</span></td>
+                    <td class="cost__cell cost__cell--no"><span class="cost__hidden">Комментарии</span><span class="visually-hidden">Нет</span></td>
+                    <td class="cost__cell cost__cell--yes"><span class="cost__hidden">Комментарии</span><span class="visually-hidden">Есть</span></td>
+                </tr>
+            </table>
 
-        <!-- <div class="cost__slider"></div>
+            <div class="cost__slider-controls slider__controls">
+                <span class="slider__control slider__control--active" href="#" role="button"></span>
+                <span class="slider__control" href="#" role="button"></span>
+                <span class="slider__control" href="#" role="button"></span>
+            </div>
+        </div>
 
-        <a class="cost__control slider__control--1" href="#" role="button"></a>
-        <a class="cost__control slider__control--2" href="#" role="button"></a>
-        <a class="cost__control slider__control--3" href="#" role="button"></a> -->
     </section>
 
     <section class="page-main__map map">
-        <h2 class="map__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="map__list">
-            <li class="map__item">
-                <h3 class="map__text">Звоните:</h3>
-                <p class="map__contact">+7 (812) 555-66-66</p>
-            </li>
-            <li class="map__item">
-                <h3 class="map__text">Приезжайте в гости:</h3>
-                <p class="map__contact">ул. Большая Конюшенная, 19/8</p>
-            </li>
-            <li class="map__item">
-                <h3 class="map__text">Пишите:</h3>
-                <a class="map__contact">mail@htmlacademy.ru</a>
-            </li>
-        </ul>
-        <div class="map_wrap-img">
-             <picture>
-                 <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-                 <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-                 <img class="map__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фотография">
-             </picture>
+        <div class="map__inner">
+            <h2 class="map__title">Остались вопросы? Свяжитесь с нами!</h2>
+
+            <ul class="map__list">
+                <li class="map__item map__item--call">
+                    <h3 class="map__text">Звоните:</h3>
+                    <p class="map__contact">+7 (812) 555-66-66</p>
+                </li>
+                <li class="map__item map__item--write">
+                    <h3 class="map__text">Пишите:</h3>
+                    <a class="map__contact">mail@htmlacademy.ru</a>
+                </li>
+                <li class="map__item map__item--address">
+                    <h3 class="map__text">Приезжайте в гости:</h3>
+                    <p class="map__contact">ул. Большая<br> Конюшенная, 19/8</p>
+                </li>
+            </ul>
+            <div class="map__img">
+                <!-- There is a map -->
+            </div>
         </div>
     </section>
-</main>
-
-<main>
-
 </main>
 
 <footer class="page-footer">
 
     <div class="page-footer__logo logo">
         <a class="logo__link">
-            <picture>
-                <source media="(min-width: 960px)" srcset="img/svg/logo-footer-desktop.svg">
-                <img class="logo__icon" src="img/svg/logo-footer-tablet.svg" alt="Фотография">
-            </picture>
+            <svg class="logo__icon logo__icon--first">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-footer-tablet"></use>
+            </svg>
+            <svg class="logo__icon logo__icon--second">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-footer-desktop"></use>
+            </svg>
         </a>
     </div>
 
@@ -266,7 +288,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Twitter</span>
-                    <svg class="social__icon" aria-label="Twitter">
+                    <svg class="social__icon social__icon--twitter" aria-label="Twitter">
                         <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
                     </svg>
                 </a>
@@ -274,7 +296,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Facebook</span>
-                    <svg class="social__icon" aria-label="Facebook">
+                    <svg class="social__icon social__icon--facebook" aria-label="Facebook">
                         <use xlink:href="img/svg/sprite.svg#icon-facebook"></use>
                     </svg>
                 </a>
@@ -282,7 +304,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Youtube</span>
-                    <svg class="social__icon" aria-label="Youtube">
+                    <svg class="social__icon social__icon--youtube" aria-label="Youtube">
                         <use xlink:href="img/svg/sprite.svg#icon-youtube"></use>
                     </svg>
                 </a>

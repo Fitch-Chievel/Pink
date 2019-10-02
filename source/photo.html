@@ -23,53 +23,55 @@
 
 <body>
 
-<header class="page-header">
+<header class="page-header page-header--photo">
     <nav class="page-header__nav nav">
-        <a class="nav__logo " href="index.html">
-            <span class="visually-hidden">Logo Pink</span>
-            <svg class="nav__logo-icon nav__logo-icon--mobile">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
-            </svg>
-            <svg class="nav__logo-icon nav__logo-icon--tablet">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
-            </svg>
-            <svg class="nav__logo-icon nav__logo-icon--desktop">
-                <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
-            </svg>
-        </a>
+        <div class="nav__inner">
+            <a class="nav__logo " href="index.html">
+                <span class="visually-hidden">Logo Pink</span>
+                <svg class="nav__logo-icon nav__logo-icon--mobile">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-mobile"></use>
+                </svg>
+                <svg class="nav__logo-icon nav__logo-icon--tablet">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-tablet"></use>
+                </svg>
+                <svg class="nav__logo-icon nav__logo-icon--desktop">
+                    <use xlink:href="img/svg/sprite.svg#icon-logo-header-desktop"></use>
+                </svg>
+            </a>
 
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Конкурс</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
-        </ul>
-
-        <h2 class="nav__title">Фотографии пользователей</h2>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="photo.html">Фотографии</a></li>
+                <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--disabled" href="#">HTML Academy</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <h2 class="nav__title nav__title--photo">Фотографии<br> пользователей</h2>
 
 </header>
 
-<main class="page-main">
+<main class="page-main page-main--photo">
     <section class="page-main__catalog catalog">
 
-        <h2 class="catalog__title catalog__title--top">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <h2 class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
 
         <div class="catalog__panorama">
             <picture>
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="catalog__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография">
+                <img class="catalog__panorama-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
 
             <div class="catalog__card-body catalog__card-body--panorama">
-                <h5 class="catalog__card-title">Анна <span class="upload__alert">(5 минут назад)</span></h5>
+                <h5 class="catalog__card-title catalog__card-title--panorama">Анна <span class="catalog__card-alert">(5 минут назад)</span></h5>
                 <p class="catalog__card-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <div class="catalog__like">
-                    <p class="catalog__like-text">Нравится: 215</p>
+                <div class="catalog__like catalog__like--panorama">
                     <svg class="catalog__like-icon" aria-label="Twitter">
                         <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                     </svg>
+                    <p class="catalog__like-text">Нравится: 215</p>
                 </div>
             </div>
         </div>
@@ -83,16 +85,17 @@
                 </picture>
 
                 <div class="catalog__card-body">
-                    <h5 class="catalog__card-title">Левон <span class="upload__alert">(5 часов назад)</span></h5>
+                    <h5 class="catalog__card-title">Левон <span class="catalog__card-alert">(5 часов назад)</span></h5>
                     <p class="catalog__card-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                     <div class="catalog__like">
-                        <p class="catalog__like-text">Нравится: 356</p>
                         <svg class="catalog__like-icon" aria-label="Twitter">
                             <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                         </svg>
+                        <p class="catalog__like-text">Нравится: 356</p>
                     </div>
                 </div>
             </div>
+
             <div class="catalog__card">
                 <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
@@ -101,16 +104,17 @@
                 </picture>
 
                 <div class="catalog__card-body">
-                    <h5 class="catalog__card-title">Антон <span class="upload__alert">(12 часов назад)</span></h5>
+                    <h5 class="catalog__card-title">Антон <span class="catalog__card-alert">(12 часов назад)</span></h5>
                     <p class="catalog__card-text">Соседи будут рады!</p>
                     <div class="catalog__like">
-                        <p class="catalog__like-text">Нравится: 215</p>
                         <svg class="catalog__like-icon" aria-label="Twitter">
                             <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                         </svg>
+                        <p class="catalog__like-text">Нравится: 666</p>
                     </div>
                 </div>
             </div>
+
             <div class="catalog__card">
                 <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
@@ -119,34 +123,36 @@
                 </picture>
 
                 <div class="catalog__card-body">
-                    <h5 class="catalog__card-title">Борис <span class="upload__alert">(20 часов назад)</span></h5>
+                    <h5 class="catalog__card-title">Борис <span class="catalog__card-alert">(20 часов назад)</span></h5>
                     <p class="catalog__card-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                     <div class="catalog__like">
-                        <p class="catalog__like-text">Нравится: 215</p>
                         <svg class="catalog__like-icon" aria-label="Twitter">
                             <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                         </svg>
+                        <p class="catalog__like-text">Нравится: 215</p>
                     </div>
                 </div>
             </div>
+
             <div class="catalog__card">
                 <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                    <img class="catalog__card-img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография">
+                    <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="catalog__card-img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография">
                 </picture>
 
                 <div class="catalog__card-body">
-                    <h5 class="catalog__card-title">Сергей <span class="upload__alert">(25 часов назад)</span></h5>
+                    <h5 class="catalog__card-title">Сергей <span class="catalog__card-alert">(25 часов назад)</span></h5>
                     <p class="catalog__card-text">Самая кубанская в мире!</p>
                     <div class="catalog__like">
-                        <p class="catalog__like-text">Нравится: 4</p>
                         <svg class="catalog__like-icon" aria-label="Twitter">
                             <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                         </svg>
+                        <p class="catalog__like-text">Нравится: 4</p>
                     </div>
                 </div>
             </div>
+
             <div class="catalog__card">
                 <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
@@ -154,15 +160,14 @@
                     <img class="catalog__card-img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография">
                 </picture>
 
-                <img src="#" class="catalog__card-img" alt="images">
                 <div class="catalog__card-body">
-                    <h5 class="catalog__card-title">Максим <span class="upload__alert">(40 часов назад)</span></h5>
+                    <h5 class="catalog__card-title">Максим <span class="catalog__card-alert">(40 часов назад)</span></h5>
                     <p class="catalog__card-text">Где снег-то?</p>
                     <div class="catalog__like">
-                        <p class="catalog__like-text">Нравится: 150</p>
                         <svg class="catalog__like-icon" aria-label="Twitter">
                             <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                         </svg>
+                        <p class="catalog__like-text">Нравится: 150</p>
                     </div>
                 </div>
             </div>
@@ -175,13 +180,13 @@
                 </picture>
 
                 <div class="catalog__card-body">
-                    <h5 class="catalog__card-title">Надежда <span class="upload__alert">(45 часов назад)</span></h5>
+                    <h5 class="catalog__card-title">Надежда <span class="catalog__card-alert">(45 часов назад)</span></h5>
                     <p class="catalog__card-text">Всем GM и взаимные лайки!</p>
                     <div class="catalog__like">
-                        <p class="catalog__like-text">Нравится: 2560</p>
                         <svg class="catalog__like-icon" aria-label="Twitter">
                             <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
                         </svg>
+                        <p class="catalog__like-text">Нравится: 2560</p>
                     </div>
                 </div>
             </div>
@@ -189,46 +194,70 @@
     </section>
 
     <section class="page-main__upload upload">
-        <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <h2 class="upload__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
 
-        <div class="upload__wrap-form">
+        <div class="upload__form-wrap">
             <picture>
-                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@1x.2pg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
                 <img class="upload__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография">
             </picture>
 
             <form class="upload__form">
-                <div class="upload__form-group">
-                     <svg class="upload__icon upload__icon--crop" aria-label="иконка формы">
+                <div class="upload__form-group upload__form-group--crop">
+                    <span class="visually-hidden">crop</span>
+                    <svg class="upload__icon upload__icon--crop" aria-label="иконка формы">
                         <use xlink:href="img/svg/sprite.svg#icon-editor-crop"></use>
                     </svg>
-                    <div class="upload__scale">
-                        <label class="upload__label-range" for="formControlRange"><span class="visually-hidden">crop</span></label>
-                        <input class="upload__control-range" type="range" id="formControlRange">
-                    </div>
-                </div>
-                <div class="upload__form-group">
-                     <svg class="upload__icon upload__icon--fill" aria-label="иконка формы">
-                        <use xlink:href="img/svg/sprite.svg#icon-editor-fill"></use>
-                    </svg>
-                    <div class="upload__scale">
-                        <label class="upload__label-range" for="formControlRange"><span class="visually-hidden">fill</span></label>
-                        <input class="upload__control-range" type="range" id="formControlRange">
-                    </div>
-                </div>
-                <div class="upload__form-group">
-                    <svg class="upload__icon upload__icon--contrast" aria-label="иконка формы">
-                        <use xlink:href="img/svg/sprite.svg#icon-editor-contrast"></use>
-                    </svg>
-                    <div class="upload__scale">
-                        <label class="upload__label-range" for="formControlRange"><span class="visually-hidden">contrast</span></label>
-                        <input class="upload__control-range" type="range" id="formControlRange">
+                    <div class="upload__range-scale upload__range--crop">
+                        <div class="upload__range-value"></div>
+                        <div class="upload__range-toggle upload__range-toggle--crop"></div>
                     </div>
                 </div>
 
-                <div class="upload__wrap-btn">
-                    <button class="upload__btn btn">Запостить</button>
-                    <button class="upload__btn btn">Отмена</button>
+                <div class="upload__form-group">
+                    <span class="visually-hidden">fill</span>
+                    <svg class="upload__icon upload__icon--fill" aria-label="иконка формы">
+                        <use xlink:href="img/svg/sprite.svg#icon-editor-fill"></use>
+                    </svg>
+                    <div class="upload__range-scale upload__range--fill">
+                        <div class="upload__range-value"></div>
+                        <div class="upload__range-toggle upload__range-toggle--fill"></div>
+                    </div>
+                </div>
+
+                <div class="upload__form-group">
+                    <span class="visually-hidden">contrast</span>
+                    <svg class="upload__icon upload__icon--contrast" aria-label="иконка формы">
+                        <use xlink:href="img/svg/sprite.svg#icon-editor-contrast"></use>
+                    </svg>
+                    <div class="upload__range-scale upload__range--contrast">
+                        <div class="upload__range-value"></div>
+                        <div class="upload__range-toggle upload__range-toggle--contrast"></div>
+                    </div>
+                </div>
+
+                <div class="upload__form-group upload__form-group--mobile">
+                    <div class="upload__icons">
+                        <svg class="upload__icon upload__icon--crop" aria-label="иконка формы">
+                            <use xlink:href="img/svg/sprite.svg#icon-editor-crop"></use>
+                        </svg>
+                        <svg class="upload__icon upload__icon--fill" aria-label="иконка формы">
+                            <use xlink:href="img/svg/sprite.svg#icon-editor-fill"></use>
+                        </svg>
+                        <svg class="upload__icon upload__icon--contrast" aria-label="иконка формы">
+                            <use xlink:href="img/svg/sprite.svg#icon-editor-contrast"></use>
+                        </svg>
+                    </div>
+
+                    <div class="upload__range-scale">
+                        <div class="upload__range-value"></div>
+                        <div class="upload__range-toggle"></div>
+                    </div>
+                </div>
+
+                <div class="upload__btn-wrap">
+                    <button class="upload__btn btn btn--upload">Запостить</button>
+                    <button class="upload__btn btn btn--upload btn--disabled">Отмена</button>
                 </div>
 
             </form>
@@ -241,10 +270,12 @@
 
     <div class="page-footer__logo logo">
         <a class="logo__link">
-            <picture>
-                <source media="(min-width: 960px)" srcset="img/svg/logo-footer-desktop.svg">
-                <img class="logo__icon" width="147" height="40" src="img/svg/logo-footer-tablet.svg" alt="Фотография">
-            </picture>
+            <svg class="logo__icon logo__icon--first">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-footer-tablet"></use>
+            </svg>
+            <svg class="logo__icon logo__icon--second">
+                <use xlink:href="img/svg/sprite.svg#icon-logo-footer-desktop"></use>
+            </svg>
         </a>
     </div>
 
@@ -253,7 +284,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Twitter</span>
-                    <svg class="social__icon" aria-label="Twitter">
+                    <svg class="social__icon social__icon--twitter" aria-label="Twitter">
                         <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
                     </svg>
                 </a>
@@ -261,7 +292,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Facebook</span>
-                    <svg class="social__icon" aria-label="Facebook">
+                    <svg class="social__icon social__icon--facebook" aria-label="Facebook">
                         <use xlink:href="img/svg/sprite.svg#icon-facebook"></use>
                     </svg>
                 </a>
@@ -269,7 +300,7 @@
             <li class="social__item">
                 <a href="#" class="social__link">
                     <span class="visually-hidden">Youtube</span>
-                    <svg class="social__icon" aria-label="Youtube">
+                    <svg class="social__icon social__icon--youtube" aria-label="Youtube">
                         <use xlink:href="img/svg/sprite.svg#icon-youtube"></use>
                     </svg>
                 </a>
@@ -279,7 +310,7 @@
 
     <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTMLAcademy</span>
             <svg class="copyright__logo" aria-label="HTMLAcademy">
                 <use xlink:href="img/svg/sprite.svg#icon-html-academy"></use>

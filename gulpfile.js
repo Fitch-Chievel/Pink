@@ -1,5 +1,5 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+var gulp = require("gulp"); // Подключаем gulp.
+var sass = require("gulp-sass"); // Подключаем sass пакет.
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -11,11 +11,12 @@ var include = require("posthtml-include");
 var run = require("run-sequence");
 
 
-gulp.task("style", function() {
+
+gulp.task("style", function() { // Создаем таск style.
     gulp.src("source/sass/style.scss")
         .pipe(plumber())
-        .pipe(sass())
-        .pipe(gulp.dest("source/css"))
+        .pipe(sass()) // Преобразуем sass в css посредством gulp-sass.
+        .pipe(gulp.dest("source/css")) // Выгружаем результата в папку source/css.
         .pipe(server.stream());
 });
 
@@ -29,7 +30,7 @@ gulp.task("serve", function() {
         ui: false
     });
 
-    gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+    gulp.watch("source/sass/**/*.{scss,sass}", ["style"]); // Наблюдение за sass файлами.
     gulp.watch("source/*.html", ["html"])
         .on("change", server.reload);
 });
@@ -45,12 +46,12 @@ gulp.task("html", function() {
 
 
 gulp.task("sprite", function() {
-    return gulp.src("source/img/svg/icon-*.svg")
-        .pipe(svgstore({
-            inlineSvg: true
+    return gulp.src("source/img/svg/icon-*.svg") // Указываем с какими файлами будем работать.
+        .pipe(svgstore({ // Запускаем плагин svgstore, т.е. передаем все img, которые будут. найдены.
+            inlineSvg: true // Все ненужные xml вырезаются.
         }))
-        .pipe(rename("sprite.svg"))
-        .pipe(gulp.dest("source/img/svg"));
+        .pipe(rename("sprite.svg")) // Переименовываем результат в sprite.svg.
+        .pipe(gulp.dest("source/img/svg")); // Выгружаем результат в эту папку.
 });
 
 
